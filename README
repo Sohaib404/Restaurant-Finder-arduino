@@ -1,0 +1,34 @@
+Name: Sohaib Khadri, Oscar Gamelin
+CMPUT 275 Fa19
+Major Assignment 1 Part 2: Restaurant Finder
+
+Included Files:
+-a1part2.cpp
+-Makefile
+-README
+
+Accessories:
+ * Arduino Mega Board (AMG)
+ * TFT Display
+ * Wires
+ * Joystick
+ * Breadboard
+
+Wiring Instructions:
+ *Arduino analog pin A8 should connect to joystick VRy
+ *Arduino analog pin A9 should connect to joystick VRx
+ * Connect the TFT display to the Arduino
+ *Arduino digital pin 53 should connect to joystick pin SW
+*Connect the +5V and Ground on the joystick to the +5V and Ground
+on the Arduino
+
+Running Insctructions:
+* Navigate to the respective directory with all files and "make upload" to the Arduino
+* The Map and a red square cursor should print out
+* You can navigate the whole map of Edmonton and by touching the display, you can see all the
+restaurants within the map patch shown on the display
+* There are two buttons on the right side of the display. The top one chooses the minimum rating
+a restaurant needs for it to be displayed on the map or the list in the second mode. The bottom button chooses what algorithm is used for sorting the restaurants.The time taken for the chosen sorting algorithm is displayed on the serial monitor.
+* Pressing the joystick down will take you the second mode of the program where all the restaurants that are within the required rating are listed by distance to cursor.
+* Pressing down once again and selecting a restaurant will center your cursor on chosen restaurant
+as close as possible within the confines of our map.
